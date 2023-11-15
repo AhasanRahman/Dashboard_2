@@ -1,0 +1,151 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+
+ </head>
+ <body class="Dashboard_nev_res">
+
+    <div class="main">
+        <div class="sidenavbar mobile_version">
+            <div class="logo">
+                <img class="img_class" src="image/GraduationCap.svg" >
+            </div>
+
+            <ul class="pc_nav_menu">
+                <li><a href="#"><i class="fa-solid fa-table-cells-large"></i> Dashboard</a></li>
+                <li> <a href="#"><i class="fa-solid fa-pen-to-square"></i> Registration</a></li>
+                <li> <a href="#"><i class="fa-solid fa-money-check"></i> Payment Info</a></li>
+                <li><a href="#"><i class="fa-regular fa-book"></i> Courses</a></li>
+                <li><a href="#"><i class="fa-solid fa-message"></i> Notice</a></li>
+                <li><a href="#"><i class="fa-solid fa-calendar-days"></i> Schedule</a></li>
+                <li><a href="#"><i class="fa-solid fa-arrow-right-from-bracket" id="logout"></i> Logout</a></li>
+            </ul>
+            
+        </div>   
+        <div class="rightmain">
+            <div class="header1 ">
+                
+                <div class="searchbar">
+                    <div class="mobile_nev_icon" id="mobile_navicon"><i class="fa-solid fa-bars" id="btn"></i></div>
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="profile">
+                        <img src="image/Ellipse6(1).png">
+                        <span>
+                            <h4>John Doe</h4>
+                        <p>3rd year</p>  
+                        </span>
+                </div>
+            </div>
+            <div class="header2">
+                <p>November 10, 2023</p>
+                <h1>Welcome Back, John!</h1>
+                <h5>Always stay updated in your student portal</h5>
+            
+            </div>
+            <div class="main-container">
+                <div class="left-container">
+                    <h3 class="indexh3">Finance</h3>
+                    <div class="carddiv1">
+                        <div class="card_item_style_one">
+                            <img class="coinimg" src="image/File&Pen.png">
+                            <h3>$10,000</h3>
+                            <p>Total Payable</p>
+                        </div>
+                        <div class="card_item_style_one">
+                            <img src="image/Group14.png">
+                            <h3>$5,000</h3>
+                            <p>Total Paid</p>
+
+                        </div>
+                        <div class="card_item_style_one">
+                            <img src="image/Group15.svg">
+                            <h3>$300</h3>
+                            <p>Others</p>
+                        </div>
+                    </div>
+                    <h3 class="indexh3">Enrolled Courses</h3> 
+                    <div class="carddiv2">
+                        <div class="itemdiv">
+                            <div>
+                                <p>Data Structure</p>
+                                <a class="view_link" href="#">View</a>
+                            </div>
+                            <div class="card_img_one"> 
+                                <img src="image/IconImage.png">
+                            </div>
+                        </div>
+                        <div class="itemdiv">
+                            <div>
+                                <p>Fundamental of Database</p>
+                                <a class="view_link" href="#">View</a>
+                            </div>
+                            <div class="card_img_one"> 
+                                <img src="image/Group16.svg">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="right-container">
+
+                    <h4 class="indexh3"> Course instructors</h4>
+                    <div class="imgdiv">
+                        <img src="image/Ellipse16.png">
+                        <img src="image/Ellipse17.png">
+                        <img src="image/Ellipse18.png">
+
+                    </div>
+                    <div class="notice">
+                        <p>Daily Notice</p> 
+                        <a class="link_seemore" href="#">See all</a>
+                    </div>
+                    <div class="description">
+                        <div>
+                            <h5>Prelim payment due</h5>
+                            <p>Sorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a class="link_seemore" href="#">See more</a>
+                        </div>
+                        <div>
+                            <h5>Exam Schedule</h5>
+                            <p>Norem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                                 
+                                <a class="link_seemore" href="#">See more</a>
+                                 
+                        </div>
+                    </div>
+                        
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+
+        $( "#mobile_navicon" ).on( "click", function() {
+            $( ".sidenavbar.mobile_version" ).toggleClass( "show" );
+        });
+
+        // let btn = document.querySelector("#btn");
+        // let sidenavbar = document.querySelector(".sidenavbar");
+
+        // btn.onclick = function(){
+        //     sidenavbar.classList.toggle("active");
+        // }
+
+    </script>
+
+ </body>
+ </html>
