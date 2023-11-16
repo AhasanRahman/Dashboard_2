@@ -5,11 +5,12 @@
 ======================
 */
 
-/* html{
+html{
     width: 100%;
     max-width: 100%;
+    height: 100%;
     overflow-x: hidden;
-} */
+}
 
 *{
     margin: 0;
@@ -185,28 +186,29 @@ input[type=text]{
 .main-container{
     display: grid;
     grid-template-columns: 70% 30%;
-    column-gap: 10px;
     width: 100%;
+    padding: 25px 0px;
 }
 .left-container{
-    margin: 20px 10px 0px 0px;
+    margin: 0px 10px 0px 0px;
+}
+
+.part_finance{
+    margin-bottom: 35px;
 }
 
 .left-container h3{
     font-size: 15px;
-    line-height: 40px;
-     
+    margin-bottom: 10px;
 }
 .right-container{
-    margin-top: 30px;
-    
+    margin: 0px 0px 0px 20px;
 }
  
 .carddiv1{
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    column-gap: 10px;
-    
+    grid-template-columns: 32% 32% 32%;
+    justify-content: space-between;
 }
 .carddiv1 .card_item_style_one{
     width: 100%;
@@ -214,6 +216,7 @@ input[type=text]{
     text-align: center;
     border-radius: 24px;
     background: #FFF;
+    margin-right: 5px;
     box-shadow: 8px 8px 48px 8px rgba(0, 0, 0, 0.08);
     
 }
@@ -221,13 +224,15 @@ input[type=text]{
     margin-top: 15px;
 
 }
-.carddiv1  .coinimg{
-    margin-top: 60px;
-}
+ 
 .carddiv1 p{
     font-size: 16px;
     font-weight: 400px;
     color: #00000080;
+}
+.card_item_style_one img{
+    width:100px;
+    height: 100px;
 }
 .carddiv2{
     display: grid;
@@ -235,7 +240,10 @@ input[type=text]{
     margin-top: 20px;
     column-gap: 10px;
 }
-
+.card_img_one img{
+    width: 100px;
+     
+}
 .itemdiv  {
     display: grid;
     grid-template-columns: 65% 35%;
@@ -258,12 +266,7 @@ input[type=text]{
 .itemdiv img{
     margin-top: 40px;
 }
-.itemdiv span{
-    background-color: #E74C3C;
-    padding: 6px 48px;
-    border-radius: 25px;
-    color: #FFF;
-}
+
 
 .itemdiv .view_link{
     text-decoration: none;
@@ -274,62 +277,59 @@ input[type=text]{
 }
 
 .right-container h4{
-    margin-left: 20px;
     font-weight: 600;
 
 }
-.right-container div img{
-    padding: 15px;  
-
+.right-container .imgdiv{
+    padding: 15px 0px;  
 }
+
 .right-container .notice{
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
-    
 }
 .right-container .link_seemore{
     text-decoration: none;
     color:#E74C3C;
-    padding: 0px 20px;
+    padding: 0px 20px 0px 0px;
+    margin: 10px 0px 0px 0px;
 }
 .notice p{
-    margin-left: 20px;
     font-size: 14px;
     font-weight: 600;
+}
+.link_seeall{
+    text-decoration: none;
+    color: #E74C3C;
+    margin-right: 10px;
 }
  
 .description {
     margin-top: 40px;
+    padding: 20px 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 5.21094px 5.21094px 31.26563px 5.21094px rgba(0, 0, 0, 0.08);
-
 }
-.description div{
-margin-top: 30px;
 
+.description .para{
+    margin-bottom: 15px;
 }
-.description div h5{
+
+.description .para h5{
     font-size: 16px;
     font-weight: 600;
-    line-height: 45px;
     color: #000000;
-    margin-left:20px ;
-    
+    margin-bottom: 10px;
 }
-.description div p{
+.description .para p{
     font-size: 14px;
-    width: 280px;
     color: #00000080;
-    margin-left: 20px;
+    text-align: justify;
+    margin-bottom: 10px;
 }
-.description div span{
-font-size: 14px;
-color: #E74C3C;
-margin-left: 20px;
-}
-
+ 
 
 /* 
 ======================= 
@@ -340,7 +340,57 @@ margin-left: 20px;
 /* ************* Responsive *************/
 
     @media only screen and (max-width: 1366px) {
+        .main{
+            max-width: 90%;
+        }
+        .description{
+            padding: 20px 20px 5px;
+        }
+    }
+
+    @media only screen and (max-width: 1280px) {
+        .sidenavbar{
+            max-width: 235px;
+        }
+        .main{
+            max-width: 90%;
+        }
+        .description{
+            padding: 20px 20px 5px;
+        }
+        .pc_nav_menu li {
+            margin-left: 10px;
+        }
+        .header2 p,.header2 h1,.header2 h5{
+            margin-left: 40px;
+        }
        
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .main{
+            max-width: 90%;
+        }
+        .description{
+            padding: 20px 10px 5px;
+        }
+        .searchbar input[type=text]{
+            width: 450px;
+        }
+        .itemdiv p{
+            margin-bottom: 25px;
+            font-size: 15px;
+            height: 50px;
+        }
+        .itemdiv img {
+            margin-top: 30px;
+            width: 65px;
+        }
+        .itemdiv .view_link {
+            padding: 5px 30px;
+            border-radius: 15px;
+            font-size: 15px;
+        }
     }
 
 
@@ -352,11 +402,11 @@ margin-left: 20px;
             position: absolute;
             top: 0px;
             left: -500px;
-            transition-duration: .5s;
+            transition-duration: .6s;
             margin-top: 0px;
             margin-right: 0px; 
             border-radius: 0px;
-            max-width: 60%;
+            max-width: 30%;
             height: 100vh;
         }
 
@@ -366,43 +416,114 @@ margin-left: 20px;
             left: 0px;
             transition-duration: .6s;
         }
+        .main{
+                width: 100%;
+                max-width: 100%;
+                padding: 0px 10px;
+        }
+        .main-container{
+            width: 100%;
+        }
+        .indexh3{
+            margin-left: 10px;
+        }
+        .left-container{
+            width: 100%;
+        }
+        .card_item_style_one img{
+            width:70px;
+            height: 80px;
+        }
+        .carddiv1 .card_item_style_one{
+            padding: 12px;   
+            margin-left: 5px;
+        }
+        .itemdiv  {
+            padding: 12px 12px 18px;
+        }
+        .right-container div img{
+            padding: 5px;  
+        }
+        .description {
+            padding: 20px 15px 5px;
+        }
+
+    }
+    @media only screen and (max-width: 850px){
+        .main-container{
+            
+            grid-template-columns:100% ;
+        }
+    }
+    @media only screen and (max-width: 656px){
+        .searchbar input[type=text]{
+            width: 250px;
+        }
+        .card_item_style_one img{
+            width:50px;
+            height: 50px;
+        }
+        .pc_nav_menu li a {
+            font-size: 13px;
+            padding: 10px 0px 10px 0px;
+        }
 
     }
 
-
-    @media (max-width:450px){
+    @media only screen and (max-width:450px){
+        .sidenavbar.mobile_version{
+            max-width: 200px;
+        }
+        .logo .img_class{
+            width: 60px;
+        }
         .main{
             width: 100%;
             max-width: 100%;
         }
         .header1{
               margin-top: 5px;
+            
         }
 
         .header1 h4{
             font-size: 10px;
-            width: 50px;
-            
-      }
+            width: 48px;
+         }
       .header1 p{
         font-size: 8px;
-         
+        }
+        .profile{
+            display: flex;
+            align-items: center;
+        }
+  
+        .pc_nav_menu li a {
+            font-size: 13px;
+            padding: 10px 0px 10px 0px;
+        }
+        .header2 p, .header2 h1, .header2 h5 {
+            margin-left: 20px;
+        }
         
-  }
-  .profile{
-    display: flex;
-    align-items: center;
-     
-}
-
+        .card_item_style_one img{
+            width:50px;
+            height: 50px;
+        }
         .header2 h1{
             font-size: 25px;
+            margin-top: 5px;
+            height: 30px;
+        }
 
+        .itemdiv p{
+            height: 35px;
         }
          
         .searchbar input[type=text]{
-            width: 80%;
-            margin-right: px;
+            width: 100%;
+            margin-right: 5px;
+             
         }
         .main-container{
             grid-template-columns: 100%;
@@ -412,7 +533,7 @@ margin-left: 20px;
         }
        
         .card_item_style_one{
-            margin:0px 10px 12px 5px ;
+            margin: 0px 10px 12px 5px ;
         }
         .carddiv2{
             grid-template-columns: 100%;
@@ -421,14 +542,8 @@ margin-left: 20px;
             margin: 0px 0px 10px 10px;
              
         }
-        .itemdiv .view_link{
-            margin-bottom: 90px;
-        }
-
-        .indexh3{
-            margin-left: 10px;
-        }
-  
+       
+         
 
     }
      
